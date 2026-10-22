@@ -1,0 +1,21 @@
+# Tide agent-pack files (fetched locally, not part of the prototype)
+.tide-pack/
+
+node_modules/
+.next/
+out/
+build/
+
+# Secrets — operator credentials NEVER belong in the repo (AP-41).
+.env
+.env.local
+.env.*.local
+scripts/.skycloak-api-key
+
+# Local TideCloak state (adapter export + H2 volume)
+data/tidecloak.json
+data/keycloakdb*
+
+# Synthetic runtime state for the prototype
+data/carequorum-state.json
+data/carequorum-state.json.tmp
